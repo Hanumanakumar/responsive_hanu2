@@ -88,3 +88,12 @@ input, textarea{
   padding:1%;
   margin:1%;
 }
+
+.footer{
+background:#000;
+	color:#fff;
+	padding:2%;
+	text-align:center;
+	font-weight:600;
+	font-size:16px;
+}
