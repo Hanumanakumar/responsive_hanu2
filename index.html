@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> PROJECT :: ONE </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css"/>
+<style>
+.item {
+  position: relative;
+  margin: 2%;
+  overflow: hidden;
+  width: 100%;
+}
+.item img {
+  max-width: 100%;
+  
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.item:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+</style>
+</head>
+<body>
+
+
+<div class="col-1">
+<ul class="menu">
+  <li onclick="document.getElementById('hanu2').style.display='none'; document.getElementById('hanu3').style.display='none'; document.getElementById('hanu').style.display='block'; "> BOOKS </li>
+  <li onclick="document.getElementById('hanu').style.display='none'; document.getElementById('hanu3').style.display='none'; document.getElementById('hanu2').style.display='block';"> AUTHORS </li>
+  <li onclick="document.getElementById('hanu').style.display='none'; document.getElementById('hanu3').style.display='block'; document.getElementById('hanu2').style.display='none';"> CONTACTS</li>
+</ul>
+</div>
+
+
+<div class="row" id="hanu">
+  <center>
+	  <div class="col-1">
+	  <div class="col-6"> </div>
+    <div class="col-2" style=" border:2px solid #ddd;margin:1%; box-shadow:3px 3px 3px #ddd">
+     <div class="item"> <img src="images/c.jpg" style="box-shadow: 5px 5px 5px #ddd;"> </div> <br><br>
+      <label style="font-size:24px; font-weight:700; font-family:Helvetica; text-shadow:3px 3px 3px #ddd"> C </label><br>
+	  <button type="button"> ADD TO CART </button>
+    </div>
+
+    <div class="col-2" style=" border:2px solid #ddd;margin:1%; box-shadow:3px 3px 3px #ddd">
+      <div class="item"> <img src="images/cpp.jpg" style="box-shadow: 5px 5px 5px #ddd"></div> <br><br>
+  <label style="font-size:24px; font-weight:700; font-family:Helvetica; text-shadow:3px 3px 3px #ddd"> C++  </label><br>
+	  <button type="button"> ADD TO CART </button>
+    </div>
+
+    <div class="col-2" style=" border:2px solid #ddd;margin:1%; box-shadow:3px 3px 3px #ddd">
+      <div class="item"> <img src="images/java.jpeg" style="box-shadow: 5px 5px 5px #ddd"></div> <br><br>
+      <label style="font-size:24px; font-weight:700; font-family:Helvetica; text-shadow:3px 3px 3px #ddd"> Java </label> <br>
+	  <button type="button"> ADD TO CART </button>
+    </div>
+
+    <div class="col-2" style=" border:2px solid #ddd;margin:1%; box-shadow:3px 3px 3px #ddd">
+      <div class="item"> <img src="images/python.jpg" style="box-shadow: 5px 5px 5px #ddd"> </div><br><br>
+      <label style="font-size:24px; font-weight:700; font-family:Helvetica; text-shadow:3px 3px 3px #ddd"> Python</label><br>
+	  <button type="button"> ADD TO CART </button>
+    </div>
+	  </div>
+	  <div class="col-1">
+		  <div class="col-6"> </div>
+    <div class="col-2" style=" border:2px solid #ddd;margin:1%; box-shadow:3px 3px 3px #ddd">
+      <div class="item"> <img src="images/js.jpg" style="box-shadow: 5px 5px 5px #ddd"> </div><br><br>
+      <label style="font-size:24px; font-weight:700; font-family:Helvetica; text-shadow:3px 3px 3px #ddd"> JS </label><br>
+	  <button type="button"> ADD TO CART </button>
+    </div>
+
+    <div class="col-2" style=" border:2px solid #ddd;margin:1%; box-shadow:3px 3px 3px #ddd">
+      <div class="item"><img src="images/html.jpg" style="box-shadow: 5px 5px 5px #ddd"> </div><br><br>
+  <label style="font-size:24px; font-weight:700; font-family:Helvetica; text-shadow:3px 3px 3px #ddd"> HTML </label><br>
+	  <button type="button"> ADD TO CART </button>
+    </div>
+
+    <div class="col-2" style="border:2px solid #ddd;margin:1%; box-shadow:3px 3px 3px #ddd">
+      <div class="item"> <img src="images/xml.jpg" style="box-shadow: 5px 5px 5px #ddd"> </div><br><br>
+      <label style="font-size:24px; font-weight:700; font-family:Helvetica; text-shadow:3px 3px 3px #ddd"> XML </label><br>
+	  <button type="button"> ADD TO CART </button>
+    </div>
+
+    <div class="col-2" style=" border:2px solid #ddd;margin:1%; box-shadow:3px 3px 3px #ddd">
+      <div class="item"> <img src="images/perl.jpg" style="box-shadow: 5px 5px 5px #ddd"> </div><br><br>
+      <label style="font-size:24px; font-weight:700; font-family:Helvetica; text-shadow:3px 3px 3px #ddd"> Perl </label><br>
+	  <button type="button"> ADD TO CART </button>
+    </div>
+	  </div>
+</center>
+</div>
+
+
+<div class="row" id="hanu2" style="display:none;">
+<div class="col-1">
+  <div class="col-3">
+	  <center><img src="images/auth1.jpg" style="box-shadow: 5px 5px 5px #ddd"></center>
+  </div>
+  <div class="col-3">
+  <center>
+    <label style="font-size:24px; font-weight:700; font-family:Helvetica; text-shadow:3px 3px 3px #ddd"> Dennis MacAlistair Ritchie </label>
+    <p style="font-size:20px; font-family:Helvetica;"> (Sep 9, 1941-Oct 12, 2011) </p>
+	</center>
+  </div>
+
+  <div class="col-3" style="border:1px solid #341060; border-radius: 0px 0px 20px  0px">
+	  <p style="text-align:justify; font-size:14px; font-family:Helvetica;"><span style="color:#341060;font-size:20px;font-weight:700">R</span>itchie was an American computer scientist. He created the C programming language and, with long-time colleague Ken Thompson, the Unix operating system. Ritchie and Thompson were awarded the Turing Award from the ACM in 1983, the Hamming Medal from the IEEE in 1990 and the National Medal of Technology from President Bill Clinton in 1999. Ritchie was the head of Lucent Technologies System Software Research Department when he retired in 2007. He was the "R" in K&R C, and commonly known by his username dmr. </p>
+  </div>
+</div>
+
+<div class="col-1">
+    <div class="col-3">
+      <center><img src="images/auth2.jpg" style="box-shadow: 5px 5px 5px #ddd"></center>
+    </div>
+    <div class="col-3">
+	<center>
+      <label style="font-size:24px; font-weight:700; font-family:Helvetica; text-shadow:3px 3px 3px #ddd"> Timothy John Berners-Lee </label>
+      <p style="font-size:20px; font-family:Helvetica;"> (born 8 June 1955) </p>
+	  </center>
+    </div>
+
+    <div class="col-3" style="border:1px solid #341060; border-radius: 0px 0px 20px  0px">
+      <p style="text-align:justify; font-size:14px; font-family:Helvetica;"><span style="color:#341060;font-size:20px;font-weight:700">T</span>imothy John Berners-Lee OM KBE FRS FREng FRSA FBCS also known as TimBL, is an English engineer and computer scientist, best known as the inventor of the World Wide Web. He is currently a Professor of Computer Science at the University of Oxford.He made a proposal for an information management system in March 1989, and he implemented the first successful communication between a Hypertext Transfer Protocol (HTTP) client and server via the internet in mid-November the same year. </p>
+    </div>
+  </div>
+
+<div class="col-1">
+    <div class="col-3">
+      <center><img src="images/auth3.jpg" style="box-shadow: 5px 5px 5px #ddd"></center>
+    </div>
+    <div class="col-3">
+	<center>
+      <label style="font-size:24px; font-weight:700; text-shadow:3px 3px 3px #ddd"> Bjarne Stroustrup </label>
+      <p style="font-size:20px; font-family:Helvetica;"> (born 30 December 1950) </p>
+	  </center>
+    </div>
+
+    <div class="col-3" style="border:1px solid #341060; border-radius: 0px 0px 20px  0px">
+      <p style="text-align:justify; font-size:14px; font-family:Helvetica;"><span style="color:#341060;font-size:20px;font-weight:700">B</span>jarne Stroustrup is a Danish computer scientist, who is most notable for the creation and development of the widely used C++ programming language.He is a visiting professor at Columbia University, and works at Morgan Stanley as a Managing Director in New York. </p>
+    </div>
+  </div>
+
+<div class="col-1">
+    <div class="col-3">
+      <center><img src="images/auth4.jpg" style="box-shadow: 5px 5px 5px #ddd"></center>
+    </div>
+    <div class="col-3">
+	<center>
+      <label style="font-size:24px; font-weight:700; text-shadow:3px 3px 3px #ddd"> Rasmus Lerdorf </label>
+      <p style="font-size:20px;  font-family:Helvetica;"> (born 22 November 1968) </p>
+	  </center>
+    </div>
+    <div class="col-3" style="border:1px solid #341060; border-radius: 0px 0px 20px  0px">
+      <p style="text-align:justify; font-size:14px; font-family:Helvetica;"><span style="color:#341060;font-size:20px;font-weight:700">R</span>asmus Lerdorf is a Danish-Canadian programmer. He created the PHP scripting language, authoring the first two versions of the language and participated in the development of later versions led by a group of developers including Jim Winstead (who later created blo.gs), Stig Bakken, Shane Caraveo, Andi Gutmans, and Zeev Suraski. He continues to contribute to the project. </p>
+    </div>
+  </div>
+</div>
+
+
+  <div class="row" id="hanu3" style="display:none">
+     <div class="col-4">
+	 </div>
+	 <div class="col-5" style="border:2px solid #ddd; margin:2%; box-shadow:3px 3px 3px #ddd">
+	 <form method="post" enctype="multipart/form-data">
+	 <input type="text" placeholder="Name" required> <br><br>
+	 <input type="email" placeholder="E-mail" required> <br><br>
+	 <textarea placeholder="Your Message...." required style="height:70px"></textarea> <br>
+	 <button type="submit"> Send </button>
+	 </form>
+	 </div>
+  </div>
+</center>
+<div class="col-1">
+	<div class="footer">
+		Responsive web-Design &copy; 199A-2O1B
+	</div>
+	</div>
+</body>
+</html>
